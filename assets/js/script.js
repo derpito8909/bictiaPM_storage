@@ -4,12 +4,14 @@ const showDivThemes = () => {
     for (let i = 0; i < divTheme2.length; i++) {
         divTheme2[i].addEventListener('mouseenter', () => {
             divTheme.classList.add('show');
+            divTheme.classList.remove('hide');
             textTheme.classList.add('hide');
             console.log(divTheme.classList);
         });
     }
     for (let i = 0; i < divTheme2.length; i++) {
         divTheme2[i].addEventListener('mouseleave', () => {
+            divTheme.classList.add('hide');
             divTheme.classList.remove('show');
             textTheme.classList.remove('hide');
             console.log(divTheme.classList);
