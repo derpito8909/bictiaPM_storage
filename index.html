@@ -11,7 +11,7 @@
     <body>
         <div class="container " id="container">
             <header class="header">
-                <img src="./assets/img/logo-tr.png" alt="" class="logo">
+                <img src="./assets/img/premier-league-logo.svg" alt="" class="logo">
                 <nav class="nav">
                     <ul class="menu">
                         <li><a href="" class="linkMenu" id="usuario">item1</a></li>
@@ -21,9 +21,14 @@
                     </ul>
                 </nav>
             </header>
-            <div class="tema">
-                <div class="colorTema light"></div>
-                <div class="colorTema dark" id="dark"></div>
+            <div class="div-theme">
+                <span class="div-text-theme contTheme" id="textTheme">Choose Theme</span>
+                <div class="tema contTheme " id="divTheme">
+                    <div class="colorTema light" onclick="getTheme('light')"></div>
+                    <div class=" colorTema dark" onclick="getTheme('dark')"></div>
+                    <div class=" colorTema pink" onclick="getTheme('pink')"></div>
+                    <div class=" colorTema premium" onclick="getTheme('premium')">premium</div>
+                </div>
             </div>
             <main class="main">
                 <h1>Mi pagina</h1>
@@ -33,7 +38,7 @@
                     nulla impedit dicta ipsum, repellendus id nesciunt atque voluptatibus ratione praesentium iure enim
                     ut
                     qui repellat cumque.</p>
-                <img src="./assets/img/desarrollador.jpg" alt="">
+                <img src="./assets/img/etihad-in-the-evening.jpg" alt="">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil in nisi fugiat. Fugiat dolore iure
                     ipsa
                     rerum aliquid laudantium amet, ea id ad temporibus repudiandae praesentium accusamus aspernatur.

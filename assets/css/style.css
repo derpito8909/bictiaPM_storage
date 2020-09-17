@@ -4,9 +4,11 @@
 	box-sizing: border-box;
 	list-style: none;
 }
+
 body {
 	font-family: Arial, Helvetica, sans-serif;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -15,12 +17,15 @@ body {
 	box-shadow: 0 0 8px #333;
 	margin-bottom: 10px;
 }
+
 .logo {
 	width: 80px;
 }
+
 .menu {
 	display: flex;
 }
+
 .linkMenu {
 	text-decoration: none;
 	padding: 15px 20px;
@@ -36,48 +41,148 @@ body {
 	max-width: 1100px;
 	margin: auto;
 }
-.main > h1 {
+
+.main>h1 {
 	margin: 50px 0;
 }
-.main > img {
+
+.main>img {
 	width: 60%;
 	margin: 40px 0;
 }
+
 .footer {
 	padding: 20px 0;
 	margin-top: 20px;
 	box-shadow: 0 0 8px #333;
 }
-.footer > p {
+
+.footer>p {
 	text-align: center;
 }
+
+.div-text-theme {
+	position: absolute;
+	top: 200px;
+	right: 0;
+	width: 60px;
+	height: 200px;
+	overflow: hidden;
+}
+
+.show {
+	transform: translateX(0);
+	transition: all 0.2s ease-in-out;
+}
+
+.hide {
+	transform: translateX(100%);
+	transition: all 0.4s ease-in-out;
+}
+
 .tema {
 	position: absolute;
 	right: 0;
 	top: 200px;
+
 }
+
 .colorTema {
-	width: 40px;
+	width: 50px;
 	height: 40px;
 	border: 1px solid rgb(214, 160, 10);
 	cursor: pointer;
+
+
 }
+
 .light {
 	background-color: #fff;
 }
+
 .dark {
 	background-color: #333;
 }
 
-.container.dark .main {
+.pink {
+	background-color: #F27389;
+}
+
+.premium {
+	background-color: #2D2C2D;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+	color: #E9B14B;
+
+}
+
+.container.dark {
 	background-color: #333;
 }
+
 .container.dark p,
 .container.dark h1,
 .container.dark a {
 	color: #f4f4f4;
 }
+
 .container.dark .header,
 .container.dark .footer {
 	box-shadow: 0 0 8px gray;
+}
+
+.container.dark .linkMenu {
+	border-right: 1px solid #fff;
+}
+
+.container.light {
+	background-color: #fff;
+}
+
+.container.light p,
+.container.light h1,
+.container.light a {
+	color: rgb(31, 29, 29);
+}
+
+.container.light .header,
+.container.light .footer {
+	box-shadow: 0 0 8px rgb(131, 127, 127);
+}
+
+.container.pink {
+	background-color: #F9C1CF;
+}
+
+.container.pink p,
+.container.pink h1,
+.container.pink a {
+	color: #7B3D4A;
+}
+
+.container.pink .header,
+.container.pink .footer {
+	box-shadow: 0 0 8px rgb(131, 127, 127);
+	background-color: #F27389;
+}
+
+.container.premium {
+	background-color: #2D2C2D;
+}
+
+.container.premium p,
+.container.premium h1,
+.container.premium a {
+	color: #E9B14B;
+	font-size: 16px;
+}
+
+.container.premium .header,
+.container.premium .footer {
+	box-shadow: 0 0 8px rgb(131, 127, 127);
+}
+
+.container.premium .linkMenu {
+	border-right: 1px solid #E9B14B;
 }
